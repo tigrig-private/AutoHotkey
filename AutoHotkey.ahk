@@ -13,13 +13,22 @@ SetTitleMatchMode, 2
 
 Return
 
-^j::
-  Send, ^c
-  MsgBox, コピーしました
+NumLock:: Return
+ScrollLock:: Return
+Insert:: Return
+
+; 半角/全角
+sc029::
+  Send, {BackSpace}
 Return
 
+F1::
+  Send, {Delete}
+Return
+
+; CapsLock
 sc03A::
-  Send, f
+  Send, {Enter}
 Return
 
 #+E::
@@ -27,5 +36,11 @@ Return
 Return
 
 #c::
-  Run, cmd
+  Run, RunAsAdmin(%cmd%)
 Return
+
+; 無変換
+vk1D & i:: Send, {Blind}{Left} 
+vk1D & k:: Send, {Blind}{Down}
+vk1D & l:: Send, {Blind}{Right}
+Shift & vk1D:: Send, {vk1D}
