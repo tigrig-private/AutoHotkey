@@ -1,3 +1,6 @@
-*
-!.gitignore
-!AutoHotkey.ahk
+Compiler/
+*.chm
+*.exe
+
+license.txt
+WindowSpy.ahk
