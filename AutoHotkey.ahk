@@ -19,13 +19,11 @@ NumLock:: Return
 ScrollLock:: Return
 Insert:: Return
 
-; 半角/全角
-sc029:: Send, {BackSpace}
-
-F1:: Send, {Delete}
+F1:: Return
 
 ; CapsLock
 vkF0:: Send, {Enter}
+Ctrl & vkF0:: Send, {Ctrl Down}{Enter Down}{Enter Up}{Ctrl Up}
 Alt & vkf0:: Reload
 
 #+E::
@@ -33,7 +31,7 @@ Alt & vkf0:: Reload
 Return
 
 #c::
-  Run, RunAsAdmin(%cmd%)
+  Run, cmd
 Return
 
 ; 無変換
@@ -60,8 +58,12 @@ Return
 ~vk1D & z:: Send, {Blind}{Esc}
 ~vk1D & p:: Send, {Blind}{BackSpace}
 ~vk1D & `;:: Send, {Blind}{Delete}
+~vk1D & a:: Send, {BackSpace}
+~vk1D & d:: Send, {Delete}
 ~vk1D & .:: Send, {Blind}{=}
 ~vk1D & /:: Send, {Blind}{^}
+~vk1D & n:: Send, {Blind}{XButton1}
+~vk1D & m:: Send, {Blind}{XButton2}
 
 ; 変換
 ~vk1C & i:: Send, {Blind}{Up}
@@ -89,9 +91,11 @@ Return
 ~vk1C & `;:: Send, {Blind}{Delete}
 ~vk1C & .:: Send, {Blind}{=}
 ~vk1C & /:: Send, {Blind}{^}
+~vk1C & n:: Send, {Blind}{XButton1}
+~vk1C & m:: Send, {Blind}{XButton2}
 
 ; 音量
 RCtrl & Up:: Send, {Volume_Up 1}
 RCtrl & Down:: Send, {Volume_Down 1}
-RCtrl & Left:: Send, {Volume_Mute}
+RCtrl & Left:: Send, {Media_Play_Pause}
 RCtrl & Right:: Send, {Volume_Mute}
