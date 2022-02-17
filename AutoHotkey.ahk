@@ -99,3 +99,17 @@ RCtrl & Up:: Send, {Volume_Up 1}
 RCtrl & Down:: Send, {Volume_Down 1}
 RCtrl & Left:: Send, {Media_Play_Pause}
 RCtrl & Right:: Send, {Volume_Mute}
+
+; Numパッド
+^NumpadDot:: Send, {:}
+
+; 日付、時刻
+^vkBB:: ;Ctrl + セミコロン
+  FormatTime, dateStr, , yyyy/MM/dd
+  Send, {vkF2}{vkF3}%dateStr%
+Return
+
+^vkBA:: ;Ctrl + コロン
+  FormatTime, dateStr, , HH:mm:ss
+  Send, {vkF2}{vkF3}%dateStr%
+Return
