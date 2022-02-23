@@ -19,8 +19,6 @@ NumLock:: Return
 ScrollLock:: Return
 Insert:: Return
 
-F1:: Return
-
 ; CapsLock
 vkF0:: Send, {Enter}
 Ctrl & vkF0:: Send, {Ctrl Down}{Enter Down}{Enter Up}{Ctrl Up}
@@ -69,44 +67,15 @@ Return
 ~vk1D & n:: Send, {Blind}{XButton1}
 ~vk1D & m:: Send, {Blind}{XButton2}
 
-; 変換
-~vk1C & i:: Send, {Blind}{Up}
-~vk1C & j:: Send, {Blind}{Left}
-~vk1C & k:: Send, {Blind}{Down}
-~vk1C & l:: Send, {Blind}{Right}
-~vk1C & w:: Send, {Blind}{Up}
-~vk1C & a:: Send, {Blind}{Left}
-~vk1C & s:: Send, {Blind}{Down}
-~vk1C & d:: Send, {Blind}{Right}
-~vk1C & u:: Send, {Blind}{Home}
-~vk1C & o:: Send, {Blind}{End}
-~vk1C & @:: Send, {Blind}{PgUp}
-~vk1C & vkBA:: Send, {Blind}{PgDn} ; コロン
-~vk1C & 1:: Send, {Blind}{F1}
-~vk1C & 2:: Send, {Blind}{F2}
-~vk1C & 3:: Send, {Blind}{F3}
-~vk1C & 4:: Send, {Blind}{F4}
-~vk1C & 5:: Send, {Blind}{F5}
-~vk1C & 6:: Send, {Blind}{F6}
-~vk1C & 7:: Send, {Blind}{F7}
-~vk1C & 8:: Send, {Blind}{F8}
-~vk1C & 9:: Send, {Blind}{F9}
-~vk1C & 0:: Send, {Blind}{F10}
-~vk1C & -:: Send, {Blind}{F11}
-~vk1C & ^:: Send, {Blind}{F12}
-~vk1C & z:: Send, {Blind}{Esc}
-~vk1C & p:: Send, {Blind}{BackSpace}
-~vk1C & `;:: Send, {Blind}{Delete}
-~vk1C & .:: Send, {Blind}{=}
-~vk1C & /:: Send, {Blind}{^}
-~vk1C & n:: Send, {Blind}{XButton1}
-~vk1C & m:: Send, {Blind}{XButton2}
+; IME切り替え
+vkF4:: IME_SET(0) ;半角全角
+vk1C:: IME_SET(1) ;変換
 
 ; 音量
-RCtrl & Up:: Send, {Volume_Up 1}
-RCtrl & Down:: Send, {Volume_Down 1}
-RCtrl & Left:: Send, {Media_Play_Pause}
-RCtrl & Right:: Send, {Volume_Mute}
+~Numpad0 & Up:: Send, {Volume_Up 1}
+~Numpad0 & Down:: Send, {Volume_Down 1}
+~Numpad0 & Left:: Send, {Media_Play_Pause}
+~Numpad0 & Right:: Send, {Volume_Mute}
 
 ; Numパッド
 ^NumpadDot:: Send, {:}
