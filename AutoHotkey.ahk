@@ -17,12 +17,13 @@ Return
 
 NumLock:: Return
 ScrollLock:: Return
+F13:: Reload
 Insert:: Return
+vk1C:: Return ;変換
 
 ; CapsLock
 vkF0:: Send, {Enter}
 Ctrl & vkF0:: Send, {Ctrl Down}{Enter Down}{Enter Up}{Ctrl Up}
-Alt & vkf0:: Reload
 
 #+E::
   Run, C:\Users\%A_UserName%\Downloads
@@ -32,44 +33,52 @@ Return
   Run, cmd
 Return
 
-; 無変換
-~vk1D & i:: Send, {Blind}{Up}
-~vk1D & j:: Send, {Blind}{Left}
-~vk1D & k:: Send, {Blind}{Down}
-~vk1D & l:: Send, {Blind}{Right}
-~vk1D & w:: Send, {Blind}{Up}
-~vk1D & a:: Send, {Blind}{Left}
-~vk1D & s:: Send, {Blind}{Down}
-~vk1D & d:: Send, {Blind}{Right}
-~vk1D & u:: Send, {Blind}{Home}
-~vk1D & o:: Send, {Blind}{End}
-~vk1D & @:: Send, {Blind}{PgUp}
-~vk1D & vkBA:: Send, {Blind}{PgDn} ; コロン
-~vk1D & 1:: Send, {Blind}{F1}
-~vk1D & 2:: Send, {Blind}{F2}
-~vk1D & 3:: Send, {Blind}{F3}
-~vk1D & 4:: Send, {Blind}{F4}
-~vk1D & 5:: Send, {Blind}{F5}
-~vk1D & 6:: Send, {Blind}{F6}
-~vk1D & 7:: Send, {Blind}{F7}
-~vk1D & 8:: Send, {Blind}{F8}
-~vk1D & 9:: Send, {Blind}{F9}
-~vk1D & 0:: Send, {Blind}{F10}
-~vk1D & -:: Send, {Blind}{F11}
-~vk1D & ^:: Send, {Blind}{F12}
-~vk1D & z:: Send, {Blind}{Esc}
-~vk1D & p:: Send, {Blind}{BackSpace}
-~vk1D & `;:: Send, {Blind}{Delete}
-~vk1D & q:: Send, {Blind}{BackSpace}
-~vk1D & e:: Send, {Blind}{Delete}
-~vk1D & .:: Send, {Blind}{=}
-~vk1D & /:: Send, {Blind}{^}
-~vk1D & n:: Send, {Blind}{XButton1}
-~vk1D & m:: Send, {Blind}{XButton2}
+; vk1C: 変換キー
+; 右手用
+vk1C & i:: Send, {Blind}{Up}
+vk1C & j:: Send, {Blind}{Left}
+vk1C & k:: Send, {Blind}{Down}
+vk1C & l:: Send, {Blind}{Right}
+vk1C & p:: Send, {Blind}{Home}
+vk1C & vkBB:: Send, {Blind}{End} ;セミコロン
+vk1C & @:: Send, {Blind}{PgUp}
+vk1C & vkBA:: Send, {Blind}{PgDn} ;コロン
+vk1C & u:: Send, {Blind}{BackSpace}
+vk1C & o:: Send, {Blind}{Delete}
+vk1C & /:: Send, {Blind}{Esc}
+; 左手用
+vk1C & w:: Send, {Blind}{Up}
+vk1C & a:: Send, {Blind}{Left}
+vk1C & s:: Send, {Blind}{Down}
+vk1C & d:: Send, {Blind}{Right}
+vk1C & r:: Send, {Blind}{Home}
+vk1C & f:: Send, {Blind}{End}
+vk1C & t:: Send, {Blind}{PgUp}
+vk1C & g:: Send, {Blind}{PgDn}
+vk1C & q:: Send, {Blind}{BackSpace}
+vk1C & e:: Send, {Blind}{Delete}
+vk1C & z:: Send, {Blind}{Esc}
 
-; IME切り替え
-vkF4:: IME_SET(0) ;半角全角
-vk1C:: IME_SET(1) ;変換
+; 右手マウス時の左手用操作
+; （GHub でマウス親指ボタンに F13 を当てている）
+F13 & w:: Send, {Blind}{Up}
+F13 & a:: Send, {Blind}{Left}
+F13 & s:: Send, {Blind}{Down}
+F13 & d:: Send, {Blind}{Right}
+F13 & r:: Send, {Blind}{Home}
+F13 & f:: Send, {Blind}{End}
+F13 & t:: Send, {Blind}{PgUp}
+F13 & g:: Send, {Blind}{PgDn}
+F13 & q:: Send, {Blind}{BackSpace}
+F13 & e:: Send, {Blind}{Delete}
+F13 & z:: Send, {Blind}{Esc}
+F13 & b:: Send, {CtrlDown}{/}{CtrlUp}
+F13 & 1:: Send, {Blind}{6}
+F13 & 2:: Send, {Blind}{7}
+F13 & 3:: Send, {Blind}{8}
+F13 & 4:: Send, {Blind}{9}
+F13 & 5:: Send, {Blind}{0}
+F13 & vk1D:: IME_SET(1)
 
 ; 音量
 ~Numpad0 & Up:: Send, {Volume_Up 1}
