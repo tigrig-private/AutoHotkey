@@ -46,6 +46,11 @@ vk1C & vkBA:: Send, {Blind}{PgDn} ;コロン
 vk1C & u:: Send, {Blind}{BackSpace}
 vk1C & o:: Send, {Blind}{Delete}
 vk1C & /:: Send, {Blind}{Esc}
+vk1C & 6:: Send, {Blind}{1}
+vk1C & 7:: Send, {Blind}{2}
+vk1C & 8:: Send, {Blind}{3}
+vk1C & 9:: Send, {Blind}{4}
+vk1C & 0:: Send, {Blind}{5}
 ; 左手用
 vk1C & w:: Send, {Blind}{Up}
 vk1C & a:: Send, {Blind}{Left}
@@ -58,6 +63,11 @@ vk1C & g:: Send, {Blind}{PgDn}
 vk1C & q:: Send, {Blind}{BackSpace}
 vk1C & e:: Send, {Blind}{Delete}
 vk1C & z:: Send, {Blind}{Esc}
+vk1C & 1:: Send, {Blind}{6}
+vk1C & 2:: Send, {Blind}{7}
+vk1C & 3:: Send, {Blind}{8}
+vk1C & 4:: Send, {Blind}{9}
+vk1C & 5:: Send, {Blind}{0}
 
 ; 右手マウス時の左手用操作
 ; （GHub でマウス親指ボタンに F13 を当てている）
