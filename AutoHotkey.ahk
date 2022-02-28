@@ -109,3 +109,13 @@ Return
   FormatTime, dateStr, , HH:mm:ss
   Send, {vkF2}{vkF3}%dateStr%
 Return
+
+; Object Browser ==============================================
+#IfWinActive, ahk_exe obo.exe
+  ^Enter:: Send, {Alt Down}{O}{E}{Alt Up}
+#IfWinActive
+
+; A5M2 ==============================================
+#IfWinActive, ahk_exe A5M2.exe
+  F13 & b:: Send, {Blind}{CtrlDown}{k}{CtrlUp}
+#IfWinActive
