@@ -17,9 +17,10 @@ Return
 
 NumLock:: Return
 ScrollLock:: Return
-F13:: Reload
+vk1C & F5:: Reload
 Insert:: Return
 vk1C:: Return ;変換
+F13:: Return
 
 ; CapsLock
 vkF0:: Send, {Enter}
@@ -33,25 +34,10 @@ Return
   Run, cmd
 Return
 
+; vk1D: 無変換キー
++vk1D:: Return
+
 ; vk1C: 変換キー
-; 右手用
-vk1C & i:: Send, {Blind}{Up}
-vk1C & j:: Send, {Blind}{Left}
-vk1C & k:: Send, {Blind}{Down}
-vk1C & l:: Send, {Blind}{Right}
-vk1C & p:: Send, {Blind}{Home}
-vk1C & vkBB:: Send, {Blind}{End} ;セミコロン
-vk1C & @:: Send, {Blind}{PgUp}
-vk1C & vkBA:: Send, {Blind}{PgDn} ;コロン
-vk1C & u:: Send, {Blind}{BackSpace}
-vk1C & o:: Send, {Blind}{Delete}
-vk1C & /:: Send, {Blind}{Esc}
-vk1C & 6:: Send, {Blind}{1}
-vk1C & 7:: Send, {Blind}{2}
-vk1C & 8:: Send, {Blind}{3}
-vk1C & 9:: Send, {Blind}{4}
-vk1C & 0:: Send, {Blind}{5}
-; 左手用
 vk1C & w:: Send, {Blind}{Up}
 vk1C & a:: Send, {Blind}{Left}
 vk1C & s:: Send, {Blind}{Down}
@@ -68,27 +54,6 @@ vk1C & 2:: Send, {Blind}{7}
 vk1C & 3:: Send, {Blind}{8}
 vk1C & 4:: Send, {Blind}{9}
 vk1C & 5:: Send, {Blind}{0}
-
-; 右手マウス時の左手用操作
-; （GHub でマウス親指ボタンに F13 を当てている）
-F13 & w:: Send, {Blind}{Up}
-F13 & a:: Send, {Blind}{Left}
-F13 & s:: Send, {Blind}{Down}
-F13 & d:: Send, {Blind}{Right}
-F13 & r:: Send, {Blind}{Home}
-F13 & f:: Send, {Blind}{End}
-F13 & t:: Send, {Blind}{PgUp}
-F13 & g:: Send, {Blind}{PgDn}
-F13 & q:: Send, {Blind}{BackSpace}
-F13 & e:: Send, {Blind}{Delete}
-F13 & z:: Send, {Blind}{Esc}
-F13 & b:: Send, {CtrlDown}{/}{CtrlUp}
-F13 & 1:: Send, {Blind}{6}
-F13 & 2:: Send, {Blind}{7}
-F13 & 3:: Send, {Blind}{8}
-F13 & 4:: Send, {Blind}{9}
-F13 & 5:: Send, {Blind}{0}
-F13 & vk1D:: IME_SET(1)
 
 ; 音量
 ~Numpad0 & Up:: Send, {Volume_Up 1}
@@ -117,5 +82,5 @@ Return
 
 ; A5M2 ==============================================
 #IfWinActive, ahk_exe A5M2.exe
-  F13 & b:: Send, {Blind}{CtrlDown}{k}{CtrlUp}
+  ~F13 & b:: Send, {Blind}{CtrlDown}{k}{CtrlUp}
 #IfWinActive
