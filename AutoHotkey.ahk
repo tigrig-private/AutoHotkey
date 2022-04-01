@@ -17,7 +17,7 @@ Return
 
 NumLock:: Return
 ScrollLock:: Return
-vk1C & F5:: Reload
+~vk1C & F5:: Reload
 Insert:: Return
 vk1C:: Return ;変換
 F13:: Return
@@ -38,22 +38,22 @@ Return
 +vk1D:: Return
 
 ; vk1C: 変換キー
-vk1C & w:: Send, {Blind}{Up}
-vk1C & a:: Send, {Blind}{Left}
-vk1C & s:: Send, {Blind}{Down}
-vk1C & d:: Send, {Blind}{Right}
-vk1C & r:: Send, {Blind}{Home}
-vk1C & f:: Send, {Blind}{End}
-vk1C & t:: Send, {Blind}{PgUp}
-vk1C & g:: Send, {Blind}{PgDn}
-vk1C & q:: Send, {Blind}{BackSpace}
-vk1C & e:: Send, {Blind}{Delete}
-vk1C & z:: Send, {Blind}{Esc}
-vk1C & 1:: Send, {Blind}{6}
-vk1C & 2:: Send, {Blind}{7}
-vk1C & 3:: Send, {Blind}{8}
-vk1C & 4:: Send, {Blind}{9}
-vk1C & 5:: Send, {Blind}{0}
+~vk1C & w:: Send, {Blind}{Up}
+~vk1C & a:: Send, {Blind}{Left}
+~vk1C & s:: Send, {Blind}{Down}
+~vk1C & d:: Send, {Blind}{Right}
+~vk1C & r:: Send, {Blind}{Home}
+~vk1C & f:: Send, {Blind}{End}
+~vk1C & t:: Send, {Blind}{PgUp}
+~vk1C & g:: Send, {Blind}{PgDn}
+~vk1C & q:: Send, {Blind}{BackSpace}
+~vk1C & e:: Send, {Blind}{Delete}
+~vk1C & z:: Send, {Blind}{Esc}
+~vk1C & 1:: Send, {Blind}{6}
+~vk1C & 2:: Send, {Blind}{7}
+~vk1C & 3:: Send, {Blind}{8}
+~vk1C & 4:: Send, {Blind}{9}
+~vk1C & 5:: Send, {Blind}{0}
 
 ; 音量
 ~Numpad0 & Up:: Send, {Volume_Up 1}
