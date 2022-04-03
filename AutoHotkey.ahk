@@ -55,6 +55,9 @@ vk1C & 3:: Send, {Blind}{8}
 vk1C & 4:: Send, {Blind}{9}
 vk1C & 5:: Send, {Blind}{0}
 
+; F13
+~F13 & b:: Send, {CtrlDown}{/}{CtrlUp}
+
 ; 音量
 ~Numpad0 & Up:: Send, {Volume_Up 1}
 ~Numpad0 & Down:: Send, {Volume_Down 1}
