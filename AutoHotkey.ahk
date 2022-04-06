@@ -78,6 +78,17 @@ Return
   Send, {vkF2}{vkF3}%dateStr%
 Return
 
+; Shift + Space => IME Disabled
++Space:: 
+  IME_SET(0)
+  Send, {Blind}{Space}
+Return
+
+; Excel ==============================================
+#IfWinActive, ahk_exe EXCEL.EXE
+  +Enter:: Send, {AltDown}{Enter}{AltUp}
+#IfWinActive
+
 ; Object Browser ==============================================
 #IfWinActive, ahk_exe obo.exe
   ^Enter:: Send, {Alt Down}{O}{E}{Alt Up}
