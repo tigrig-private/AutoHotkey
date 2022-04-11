@@ -80,8 +80,10 @@ Return
 
 ; Shift + Space => IME Disabled
 +Space:: 
+  ime := IME_GET()
   IME_SET(0)
   Send, {Blind}{Space}
+  IME_SET(ime)
 Return
 
 ; Excel ==============================================
