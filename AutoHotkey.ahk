@@ -100,3 +100,38 @@ Return
 #IfWinActive, ahk_exe A5M2.exe
   ~F13 & b:: Send, {Blind}{CtrlDown}{k}{CtrlUp}
 #IfWinActive
+
+; Temp ==============================================
+~F13 & a::
+  Send, {Alt}
+  Send, {p}{p}
+Return
+~F13 & s::
+  Send, {Tab}{Tab}
+  Send, {AltDown}{Down}{AltUp}
+  Send, {End}{Up}
+  Send, {Enter}
+  Send, {Enter}
+Return
+~F13 & d::
+  Send, {ShiftDown}{Tab}{ShiftUp}
+  Send, {Down}{Enter}
+  Send, {Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}
+  Send, {AltDown}{Down}{AltUp}
+  Send, {End}
+  Send, {Enter}
+Return
+~F13 & f::
+  Send, {ShiftDown}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{ShiftUp}
+  Send, {End}{Up}
+  Send, {Enter}
+  Send, {Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}
+  Send, {AltDown}{Down}{AltUp}
+  Send, {End}
+  Send, {Enter}
+Return
+~F13 & g::
+  Send, {Alt}
+  Send, {b}{o}{r}{Enter}
+  Send, {CtrlDown}{ShiftDown}{b}{ShiftUp}{CtrlUp}
+Return
