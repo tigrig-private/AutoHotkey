@@ -49,6 +49,11 @@ Return
 ~F20 & q:: Send, {Blind}{BackSpace}
 ~F20 & e:: Send, {Blind}{Delete}
 ~F20 & z:: Send, {Blind}{Esc}
+~F20 & 1:: Send, {Blind}{F1}
+~F20 & 2:: Send, {Blind}{F2}
+~F20 & 3:: Send, {Blind}{F3}
+~F20 & 4:: Send, {Blind}{F4}
+~F20 & 5:: Send, {Blind}{F5}
 ; F20（右手用）
 ~F20 & i:: Send, {Blind}{Up}
 ~F20 & j:: Send, {Blind}{Left}
