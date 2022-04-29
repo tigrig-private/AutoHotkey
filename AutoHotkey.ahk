@@ -90,6 +90,11 @@ Return
   Send, {vkF2}{vkF3}%dateStr%
 Return
 
+^]:: ;Ctrl + ]
+  FormatTime, dateStr, , yyyy/MM/dd HH:mm:ss
+  Send, {vkF2}{vkF3}%dateStr%
+Return
+
 ; Shift + Space => IME Disabled
 +Space:: 
   ime := IME_GET()
