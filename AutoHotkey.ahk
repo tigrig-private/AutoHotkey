@@ -118,6 +118,12 @@ Return
   ~F20 & b:: Send, {Blind}{CtrlDown}{k}{CtrlUp}
 #IfWinActive
 
+; TopicRoom ==============================================
+#IfWinActive, ahk_exe TopicRoom.exe
+  +Enter:: Send, {Enter}
+  ^Enter:: Send, {ShiftDown}{Enter}{ShiftUp}
+#IfWinActive
+
 ; Temp ==============================================
 ~F13 & a::
   Send, {Alt}
