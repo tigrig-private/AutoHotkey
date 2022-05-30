@@ -108,6 +108,14 @@ Return
   +Enter:: Send, {AltDown}{Enter}{AltUp}
 #IfWinActive
 
+; Notion ==============================================
+#IfWinActive, ahk_exe Notion.exe
+  ; 戻る
+  XButton1:: Send, {CtrlDown}{vkDB}{CtrlUp}
+  ; 進む
+  XButton2:: Send, {CtrlDown}{vkDD}{CtrlUp}
+#IfWinActive
+
 ; Object Browser ==============================================
 #IfWinActive, ahk_exe obo.exe
   ^Enter:: Send, {Alt Down}{O}{E}{Alt Up}
@@ -125,36 +133,4 @@ Return
 #IfWinActive
 
 ; Temp ==============================================
-~F13 & a::
-  Send, {Alt}
-  Send, {p}{p}
-Return
-~F13 & s::
-  Send, {Tab}{Tab}
-  Send, {AltDown}{Down}{AltUp}
-  Send, {End}{Up}
-  Send, {Enter}
-  Send, {Enter}
-Return
-~F13 & d::
-  Send, {ShiftDown}{Tab}{ShiftUp}
-  Send, {Down}{Enter}
-  Send, {Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}
-  Send, {AltDown}{Down}{AltUp}
-  Send, {End}
-  Send, {Enter}
-Return
-~F13 & f::
-  Send, {ShiftDown}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{ShiftUp}
-  Send, {End}{Up}
-  Send, {Enter}
-  Send, {Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}
-  Send, {AltDown}{Down}{AltUp}
-  Send, {End}
-  Send, {Enter}
-Return
-~F13 & g::
-  Send, {Alt}
-  Send, {b}{o}{r}{Enter}
-  Send, {CtrlDown}{ShiftDown}{b}{ShiftUp}{CtrlUp}
-Return
+~F13 & a:: Return
