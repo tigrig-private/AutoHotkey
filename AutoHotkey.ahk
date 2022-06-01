@@ -103,6 +103,13 @@ Return
   IME_SET(ime)
 Return
 
+; 最小化
+~F20 & Space::
+  Send,{AltDown}{Space}{AltUp}
+  Sleep, 50
+  Send,{n}
+Return
+
 ; RDP 用 ==============================================
 ; Ctrl + Alt + Break
 ~F20 & Esc:: Send, {CtrlDown}{AltDown}{CtrlBreak}{AltUp}{CtrlUp}
