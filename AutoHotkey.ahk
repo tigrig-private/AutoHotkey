@@ -103,6 +103,10 @@ Return
   IME_SET(ime)
 Return
 
+; RDP 用 ==============================================
+; Ctrl + Alt + Break
+~F20 & Esc:: Send, {CtrlDown}{AltDown}{CtrlBreak}{AltUp}{CtrlUp}
+
 ; Excel ==============================================
 #IfWinActive, ahk_exe EXCEL.EXE
   +Enter:: Send, {AltDown}{Enter}{AltUp}
@@ -131,6 +135,3 @@ Return
   +Enter:: Send, {Enter}
   ^Enter:: Send, {ShiftDown}{Enter}{ShiftUp}
 #IfWinActive
-
-; Temp ==============================================
-~F13 & a:: Return
