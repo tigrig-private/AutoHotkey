@@ -104,11 +104,7 @@ Return
 Return
 
 ; 最小化
-~F20 & Space::
-  Send,{AltDown}{Space}{AltUp}
-  Sleep, 50
-  Send,{n}
-Return
+~F20 & Space:: WinMinimize, A
 
 ; RDP 用 ==============================================
 ; Ctrl + Alt + Break
