@@ -79,32 +79,29 @@ F20 & F5:: Reload
 ; Numパッド
 ^NumpadDot:: Send, {:}
 
-; 日付、時刻
-^vkBB:: ;Ctrl + セミコロン
+; 最小化
+~F20 & Space:: WinMinimize, A
+
+; 日付、時刻 ==============================================
+^!vkBB:: ;Ctrl + Alt + セミコロン
   FormatTime, dateStr, , yyyy/MM/dd
   Send, {vkF2}{vkF3}%dateStr%
 Return
 
-^vkBA:: ;Ctrl + コロン
+^+!vkBB:: ;Ctrl + Shift + Alt + コロン
+  FormatTime, dateStr, , yyyyMMdd
+  Send, {vkF2}{vkF3}%dateStr%
+Return
+
+^!vkBA:: ;Ctrl + Alt + コロン
   FormatTime, dateStr, , HH:mm:ss
   Send, {vkF2}{vkF3}%dateStr%
 Return
 
-^]:: ;Ctrl + ]
+^!]:: ;Ctrl + Alt + ]
   FormatTime, dateStr, , yyyy/MM/dd HH:mm:ss
   Send, {vkF2}{vkF3}%dateStr%
 Return
-
-; Shift + Space => IME Disabled
-+Space:: 
-  ime := IME_GET()
-  IME_SET(0)
-  Send, {Blind}{Space}
-  IME_SET(ime)
-Return
-
-; 最小化
-~F20 & Space:: WinMinimize, A
 
 ; RDP 用 ==============================================
 ; Ctrl + Alt + Break
@@ -113,6 +110,14 @@ Return
 ; Excel ==============================================
 #IfWinActive, ahk_exe EXCEL.EXE
   +Enter:: Send, {AltDown}{Enter}{AltUp}
+
+  ; Shift + Space => IME Disabled
++Space:: 
+  ime := IME_GET()
+  IME_SET(0)
+  Send, {Blind}{Space}
+  IME_SET(ime)
+Return
 #IfWinActive
 
 ; Notion ==============================================
