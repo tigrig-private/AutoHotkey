@@ -15,6 +15,11 @@ SetTitleMatchMode, 2
 
 Return
 
+; [Ctrlキー]	^
+; [Shiftキー]	+
+; [Altキー]	!
+; [Winキー]	#
+
 NumLock:: Return
 ScrollLock:: Return
 Insert:: Return
@@ -138,8 +143,7 @@ Return
   ~F20 & b:: Send, {Blind}{CtrlDown}{k}{CtrlUp}
 #IfWinActive
 
-; TopicRoom ==============================================
-#IfWinActive, ahk_exe TopicRoom.exe
-  +Enter:: Send, {Enter}
-  ^Enter:: Send, {ShiftDown}{Enter}{ShiftUp}
+; LineWorks ==============================================
+#IfWinActive, ahk_exe WMOne.exe
+  ^Enter:: Send, {Enter}
 #IfWinActive
