@@ -29,7 +29,7 @@ F20:: Return
 
 ; CapsLock
 vkF0:: Send, {Enter}
-Ctrl & vkF0:: Send, {Ctrl Down}{Enter Down}{Enter Up}{Ctrl Up}
+Ctrl & vkF0:: Send, ^{Enter}
 
 #+E::
   Run, C:\Users\%A_UserName%\Downloads
@@ -73,7 +73,7 @@ Return
 ~F20 & /:: Send, {Blind}{Esc}
 ; F20（その他）
 F20 & F5:: Reload
-~F20 & b:: Send, {CtrlDown}{/}{CtrlUp}
+~F20 & b:: Send, ^{/}
 
 ; 音量
 ~Numpad0 & Up:: Send, {Volume_Up 1}
@@ -110,11 +110,11 @@ Return
 
 ; RDP 用 ==============================================
 ; Ctrl + Alt + Break
-~F20 & Esc:: Send, {CtrlDown}{AltDown}{CtrlBreak}{AltUp}{CtrlUp}
+~F20 & Esc:: Send, ^!{CtrlBreak}
 
 ; Excel ==============================================
 #IfWinActive, ahk_exe EXCEL.EXE
-  +Enter:: Send, {AltDown}{Enter}{AltUp}
+  +Enter:: Send, !{Enter}
 
   ; Shift + Space => IME Disabled
 +Space:: 
@@ -133,9 +133,9 @@ Return
 ; Notion ==============================================
 #IfWinActive, ahk_exe Notion.exe
   ; 戻る
-  XButton1:: Send, {CtrlDown}{vkDB}{CtrlUp}
+  XButton1:: Send, ^{vkDB}
   ; 進む
-  XButton2:: Send, {CtrlDown}{vkDD}{CtrlUp}
+  XButton2:: Send, ^{vkDD}
 #IfWinActive
 
 ; Object Browser ==============================================
@@ -145,7 +145,7 @@ Return
 
 ; A5M2 ==============================================
 #IfWinActive, ahk_exe A5M2.exe
-  ~F20 & b:: Send, {Blind}{CtrlDown}{k}{CtrlUp}
+  ~F20 & b:: Send, ^{k}
 #IfWinActive
 
 ; LineWorks ==============================================
