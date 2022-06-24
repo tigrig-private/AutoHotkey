@@ -123,6 +123,11 @@ Return
   Send, {Blind}{Space}
   IME_SET(ime)
 Return
+
+;Ctrl + Alt + セミコロン => Ctrl + セミコロン（日付入力）
+^!vkBB::
+  Send, ^`;
+Return
 #IfWinActive
 
 ; Notion ==============================================
