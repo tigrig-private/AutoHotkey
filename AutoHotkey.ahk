@@ -74,6 +74,7 @@ Return
 ; F20（その他）
 F20 & F5:: Reload
 ~F20 & b:: Send, ^{/}
+F20 & F4:: !F4
 
 ; 音量
 ~Numpad0 & Up:: Send, {Volume_Up 1}
