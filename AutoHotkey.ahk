@@ -89,6 +89,8 @@ F20 & F4:: !F4
 ~F20 & Space:: WinMinimize, A
 
 ; 日付、時刻 ==============================================
+; ※ SplashTop では無効化（反映が遅いため）
+#IfWinNotActive, ahk_exe strwinclt.exe
 ^!vkBB:: ;Ctrl + Alt + セミコロン
   FormatTime, dateStr, , yyyy/MM/dd
   Send, {vkF2}{vkF3}%dateStr%
@@ -108,6 +110,7 @@ Return
   FormatTime, dateStr, , yyyy/MM/dd HH:mm:ss
   Send, {vkF2}{vkF3}%dateStr%
 Return
+#IfWinNotActive
 
 ; RDP 用 ==============================================
 ; Ctrl + Alt + Break
