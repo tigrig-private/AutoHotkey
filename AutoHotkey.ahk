@@ -87,6 +87,9 @@ F20 & F5:: Reload
 ; 最小化
 ~F20 & Space:: WinMinimize, A
 
+; バックスラッシュ
+^+/:: Send, {\}
+
 ; 日付、時刻 ==============================================
 ^!vkBB:: ;Ctrl + Alt + セミコロン
   FormatTime, dateStr, , yyyy/MM/dd
