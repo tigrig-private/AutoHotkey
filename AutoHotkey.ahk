@@ -88,6 +88,9 @@ F20 & F4:: !F4
 ; 最小化
 ~F20 & Space:: WinMinimize, A
 
+; バックスラッシュ
+^+/:: Send, {\}
+
 ; 日付、時刻 ==============================================
 ; ※ SplashTop では無効化（反映が遅いため）
 #IfWinNotActive, ahk_exe strwinclt.exe
