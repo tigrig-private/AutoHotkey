@@ -77,10 +77,10 @@ F20 & F5:: Reload
 F20 & F4:: !F4
 
 ; 音量
-~Numpad0 & Up:: Send, {Volume_Up 1}
-~Numpad0 & Down:: Send, {Volume_Down 1}
-~Numpad0 & Left:: Send, {Media_Play_Pause}
-~Numpad0 & Right:: Send, {Volume_Mute}
+~F20 & Up:: Send, {Volume_Up 1}
+~F20 & Down:: Send, {Volume_Down 1}
+~F20 & Left:: Send, {Media_Play_Pause}
+~F20 & Right:: Send, {Volume_Mute}
 
 ; Numパッド
 ^NumpadDot:: Send, {:}
