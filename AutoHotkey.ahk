@@ -42,42 +42,40 @@ Return
 ; vk1D: 無変換キー
 +vk1D:: Return
 
-; F20（左手用）
-F1 & w:: 
+; F20（左手コントロール用）
+vk1C & w:: 
   F20 & w:: Up
-F1 & a::
+vk1C & a::
   F20 & a:: Left
-F1 & s::
+vk1C & s::
   F20 & s:: Down
-F1 & d::
+vk1C & d::
   F20 & d:: Right
-F1 & r::
+vk1C & r::
   F20 & r:: Home
-F1 & f::
+vk1C & f::
   F20 & f:: End
-F1 & t::
+vk1C & t::
   F20 & t:: PgUp
-F1 & g::
+vk1C & g::
   F20 & g:: PgDn
-F1 & q::
+vk1C & q::
   F20 & q:: BackSpace
-F1 & e::
+vk1C & e::
   F20 & e:: Delete
-F1 & z::
-  F20 & z:: Esc
-F1 & 1::
+vk1C & 1::
   F20 & 1:: F1
-F1 & 2::
+vk1C & 2::
   F20 & 2:: F2
-F1 & 3::
+vk1C & 3::
   F20 & 3:: F3
-F1 & 4::
+vk1C & 4::
   F20 & 4:: F4
-F1 & 5::
+vk1C & 5::
   F20 & 5:: F5
 Return
 
-; F20（右手用）
+; F20（右手コントロール用）
 F1 & i::
   F20 & i:: Up
 F1 & j::
@@ -98,8 +96,6 @@ F1 & u::
   F20 & u:: BackSpace
 F1 & o::
   F20 & o:: Delete
-F1 & /::
-  F20 & /:: Esc
 Return
 
 ; F20（その他）
