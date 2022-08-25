@@ -76,37 +76,37 @@ vk1C & 5::
 Return
 
 ; F20（右手コントロール用）
-F1 & i::
+vk1C & i::
   F20 & i:: Up
-F1 & j::
+vk1C & j::
   F20 & j:: Left
-F1 & k::
+vk1C & k::
   F20 & k:: Down
-F1 & l::
+vk1C & l::
   F20 & l:: Right
-F1 & y::
+vk1C & y::
   F20 & y:: Home
-F1 & h::
+vk1C & h::
   F20 & h:: End
-F1 & p::
+vk1C & p::
   F20 & p:: PgUp
-F1 & vkBB::
+vk1C & vkBB::
   F20 & vkBB:: PgDn ;セミコロン
-F1 & u::
+vk1C & u::
   F20 & u:: BackSpace
-F1 & o::
+vk1C & o::
   F20 & o:: Delete
 Return
 
 ; F20（その他）
-F1 & F5::
+vk1C & F5::
   F20 & F5:: Reload
 Return
-F1 & b::
+vk1C & b::
 F20 & b::
   Send, ^{/}
 Return
-F1 & Esc::
+vk1C & Esc::
 F20 & Esc::
   !F4
 Return
@@ -163,17 +163,8 @@ Return
 
 ; Excel ==============================================
 #IfWinActive, ahk_exe EXCEL.EXE
-  +Enter:: Send, !{Enter}
 
-  ; Shift + Space => IME Disabled
-+Space:: 
-  ime := IME_GET()
-  IME_SET(0)
-  Send, {Blind}{Space}
-  IME_SET(ime)
-Return
-
-;Ctrl + Alt + セミコロン => Ctrl + セミコロン（日付入力）
+  ;Ctrl + Alt + セミコロン => Ctrl + セミコロン（日付入力）
 ^!vkBB::
   Send, ^`;
 Return
