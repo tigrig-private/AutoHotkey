@@ -99,19 +99,16 @@ vk1C & o::
 Return
 
 ; F20（その他）
-vk1C & F5::
-  F20 & F5:: Reload
-Return
 vk1C & b::
 F20 & b::
   Send, ^{/}
 Return
+vk1C & F5::
+  F20 & F5:: Reload
 vk1C & Esc::
-F20 & Esc::
-  !F4
-Return
+  F20 & Esc:: !F4
 
-; 音量
+  ; 音量
 F20 & Up::
   Send, {Volume_Up 1}
 Return
@@ -140,22 +137,22 @@ Return
 ; 日付、時刻 ==============================================
 ; ※ SplashTop では無効化（反映が遅いため）
 #IfWinNotActive, ahk_exe strwinclt.exe
-^!vkBB:: ;Ctrl + Alt + セミコロン
+vk1C & m:: ;変換 + m
   FormatTime, dateStr, , yyyy/MM/dd
   Send, {vkF2}{vkF3}%dateStr%
 Return
 
-^+!vkBB:: ;Ctrl + Shift + Alt + コロン
+vk1C & ,:: ;変換 + ,
   FormatTime, dateStr, , yyyyMMdd
   Send, {vkF2}{vkF3}%dateStr%
 Return
 
-^!vkBA:: ;Ctrl + Alt + コロン
+vk1C & .:: ;変換 + .
   FormatTime, dateStr, , HH:mm:ss
   Send, {vkF2}{vkF3}%dateStr%
 Return
 
-^!]:: ;Ctrl + Alt + ]
+vk1C & /:: ;変換 + /
   FormatTime, dateStr, , yyyy/MM/dd HH:mm:ss
   Send, {vkF2}{vkF3}%dateStr%
 Return
