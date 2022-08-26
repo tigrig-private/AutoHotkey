@@ -22,11 +22,12 @@ Return
 
 NumLock:: Return
 Insert:: Return
-vk1C:: Return ;変換
+vk1C:: Return ;変換キー
 F1:: Return
 F20:: Return
 
-; CapsLock -> レジストリ変更で F13 に
+vk5D:: Enter ;AppsKey
+F13:: AppsKey ;CapsLock -> レジストリ変更で F13 に
 
 #+E::
   Run, C:\Users\%A_UserName%\Downloads
@@ -35,9 +36,6 @@ Return
 #c::
   Run, cmd
 Return
-
-; vk1D: 無変換キー
-+vk1D:: Return
 
 ; F20（左手コントロール用）
 vk1C & w:: 
