@@ -84,14 +84,14 @@ vk1C & k::
   F20 & k:: Down
 vk1C & l::
   F20 & l:: Right
-vk1C & y::
-  F20 & y:: Home
-vk1C & h::
-  F20 & h:: End
 vk1C & p::
-  F20 & p:: PgUp
+  F20 & p:: Home
 vk1C & vkBB::
-  F20 & vkBB:: PgDn ;セミコロン
+  F20 & vkBB:: End ;セミコロン
+vk1C & y::
+  F20 & y:: PgUp
+vk1C & h::
+  F20 & h:: PgDn
 vk1C & u::
   F20 & u:: BackSpace
 vk1C & o::
