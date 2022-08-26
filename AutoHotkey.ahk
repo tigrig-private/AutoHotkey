@@ -21,7 +21,6 @@ Return
 ; [Winキー]	#
 
 NumLock:: Return
-ScrollLock:: Return
 Insert:: Return
 vk1C:: Return ;変換
 F1:: Return
