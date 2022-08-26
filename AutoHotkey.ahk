@@ -24,11 +24,9 @@ NumLock:: Return
 Insert:: Return
 vk1C:: Return ;変換
 F1:: Return
-F13:: Return
 F20:: Return
 
-; CapsLock
-vkF0:: Enter
+; CapsLock -> レジストリ変更で F13 に
 
 #+E::
   Run, C:\Users\%A_UserName%\Downloads
