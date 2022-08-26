@@ -28,7 +28,7 @@ F13:: Return
 F20:: Return
 
 ; CapsLock
-vkF0:: Esc
+vkF0:: Enter
 
 #+E::
   Run, C:\Users\%A_UserName%\Downloads
