@@ -25,6 +25,7 @@ Insert:: Return
 vk1C:: Return ;変換キー
 F1:: Return
 F20:: Return
+RAlt:: Return
 
 vk5D:: Enter ;AppsKey
 F13:: AppsKey ;CapsLock -> レジストリ変更で F13 に
