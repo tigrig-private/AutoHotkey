@@ -46,14 +46,14 @@ vk1C & s::
   F20 & s:: Down
 vk1C & d::
   F20 & d:: Right
+vk1C & c::
+  F20 & c:: Home
+vk1C & z::
+  F20 & z:: End
 vk1C & r::
-  F20 & r:: Home
+  F20 & r:: PgUp
 vk1C & f::
-  F20 & f:: End
-vk1C & t::
-  F20 & t:: PgUp
-vk1C & g::
-  F20 & g:: PgDn
+  F20 & f:: PgDn
 vk1C & q::
   F20 & q:: BackSpace
 vk1C & e::
@@ -79,10 +79,10 @@ vk1C & k::
   F20 & k:: Down
 vk1C & l::
   F20 & l:: Right
-vk1C & p::
-  F20 & p:: Home
-vk1C & vkBB::
-  F20 & vkBB:: End ;セミコロン
+vk1C & m::
+  F20 & m:: Home
+vk1C & .::
+  F20 & .:: End
 vk1C & y::
   F20 & y:: PgUp
 vk1C & h::
@@ -132,35 +132,26 @@ Return
 ; 日付、時刻 ==============================================
 ; ※ SplashTop では無効化（反映が遅いため）
 #IfWinNotActive, ahk_exe strwinclt.exe
-vk1C & m:: ;変換 + m
+vk1C & vkBB:: ;変換 + セミコロン
   FormatTime, dateStr, , yyyy/MM/dd
   Send, {vkF2}{vkF3}%dateStr%
 Return
 
-vk1C & ,:: ;変換 + ,
+vk1C & p:: ;変換 + P
   FormatTime, dateStr, , yyyyMMdd
   Send, {vkF2}{vkF3}%dateStr%
 Return
 
-vk1C & .:: ;変換 + .
+vk1C & vkBA:: ;変換 + コロン
   FormatTime, dateStr, , HH:mm:ss
   Send, {vkF2}{vkF3}%dateStr%
 Return
 
-vk1C & /:: ;変換 + /
+vk1C & @:: ;変換 + @
   FormatTime, dateStr, , yyyy/MM/dd HH:mm:ss
   Send, {vkF2}{vkF3}%dateStr%
 Return
 #IfWinNotActive
-
-; Excel ==============================================
-#IfWinActive, ahk_exe EXCEL.EXE
-
-  ;Ctrl + Alt + セミコロン => Ctrl + セミコロン（日付入力）
-^!vkBB::
-  Send, ^`;
-Return
-#IfWinActive
 
 ; Notion ==============================================
 #IfWinActive, ahk_exe Notion.exe
