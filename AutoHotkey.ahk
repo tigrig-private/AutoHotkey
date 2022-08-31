@@ -27,7 +27,7 @@ F1:: Return
 F20:: Return
 RAlt:: Return
 
-F13:: Enter ;CapsLock -> レジストリ変更で F13 に
+F13:: Return ;CapsLock -> レジストリ変更で F13 に
 
 #+E::
   Run, C:\Users\%A_UserName%\Downloads
