@@ -37,40 +37,7 @@ Return
   Run, cmd
 Return
 
-; F20（左手コントロール用）
-vk1C & w:: 
-  F20 & w:: Up
-vk1C & a::
-  F20 & a:: Left
-vk1C & s::
-  F20 & s:: Down
-vk1C & d::
-  F20 & d:: Right
-vk1C & c::
-  F20 & c:: Home
-vk1C & z::
-  F20 & z:: End
-vk1C & r::
-  F20 & r:: PgUp
-vk1C & f::
-  F20 & f:: PgDn
-vk1C & q::
-  F20 & q:: BackSpace
-vk1C & e::
-  F20 & e:: Delete
-vk1C & 1::
-  F20 & 1:: F1
-vk1C & 2::
-  F20 & 2:: F2
-vk1C & 3::
-  F20 & 3:: F3
-vk1C & 4::
-  F20 & 4:: F4
-vk1C & 5::
-  F20 & 5:: F5
-Return
-
-; F20（右手コントロール用）
+; 特殊コントロール
 vk1C & i::
   F20 & i:: Up
 vk1C & j::
@@ -91,6 +58,16 @@ vk1C & u::
   F20 & u:: BackSpace
 vk1C & o::
   F20 & o:: Delete
+vk1C & 1::
+  F20 & 1:: F1
+vk1C & 2::
+  F20 & 2:: F2
+vk1C & 3::
+  F20 & 3:: F3
+vk1C & 4::
+  F20 & 4:: F4
+vk1C & 5::
+  F20 & 5:: F5
 Return
 
 ; F20（その他）
