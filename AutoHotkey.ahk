@@ -109,23 +109,23 @@ Return
 ; 日付、時刻 ==============================================
 ; ※ SplashTop では無効化（反映が遅いため）
 #IfWinNotActive, ahk_exe strwinclt.exe
-vk1C & vkBB:: ;変換 + セミコロン
+vk1C & q:: ;変換 + q
   FormatTime, dateStr, , yyyy/MM/dd
   Send, {vkF2}{vkF3}%dateStr%
 Return
 
-vk1C & p:: ;変換 + P
+vk1C & w:: ;変換 + w
   FormatTime, dateStr, , yyyyMMdd
   Send, {vkF2}{vkF3}%dateStr%
 Return
 
-vk1C & vkBA:: ;変換 + コロン
-  FormatTime, dateStr, , HH:mm:ss
+vk1C & e:: ;変換 + e
+  FormatTime, dateStr, , HH:mm
   Send, {vkF2}{vkF3}%dateStr%
 Return
 
-vk1C & @:: ;変換 + @
-  FormatTime, dateStr, , yyyy/MM/dd HH:mm:ss
+vk1C & r:: ;変換 + e
+  FormatTime, dateStr, , HHmm
   Send, {vkF2}{vkF3}%dateStr%
 Return
 #IfWinNotActive
