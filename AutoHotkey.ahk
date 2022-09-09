@@ -111,8 +111,6 @@ Return
 ^+/:: Send, {\}
 
 ; 日付、時刻 ==============================================
-; ※ SplashTop では無効化（反映が遅いため）
-#IfWinNotActive, ahk_exe strwinclt.exe
 vk1C & q:: ;変換 + q
   FormatTime, dateStr, , yyyy/MM/dd
   Send, {vkF2}{vkF3}%dateStr%
@@ -132,7 +130,6 @@ vk1C & r:: ;変換 + e
   FormatTime, dateStr, , HHmm
   Send, {vkF2}{vkF3}%dateStr%
 Return
-#IfWinNotActive
 
 ; Notion ==============================================
 #IfWinActive, ahk_exe Notion.exe
