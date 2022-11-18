@@ -79,10 +79,8 @@ vk1C & b::
 F20 & b::
   Send, ^{/}
 Return
-vk1C & F5::
-  F20 & F5:: Reload
 vk1C & Esc::
-  F20 & Esc:: !F4
+  F20 & Esc:: Reload
 
   ; 音量
 F20 & Up::
