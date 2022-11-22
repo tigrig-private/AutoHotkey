@@ -74,6 +74,10 @@ vk1C & 5::
   F20 & 5:: F5
 Return
 
+; 特殊コントロール（マウスのみ）
+F20 & LButton:: PgUp
+F20 & RButton:: PgDn
+
 ; F20（その他）
 vk1C & b::
 F20 & b::
