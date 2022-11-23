@@ -27,7 +27,8 @@ F1:: Return
 F20:: Return
 RAlt:: Return
 
-F13:: Alt ;CapsLock -> レジストリ変更で F13 に
+;※半角/全角 -> ChgKey で変えている
+;※CapsLock -> ChgKey で変えている
 
 #+E::
   Run, C:\Users\%A_UserName%\Downloads
