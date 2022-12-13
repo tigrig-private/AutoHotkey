@@ -76,6 +76,8 @@ vk1C & 5::
 Return
 
 ; 特殊コントロール（マウスのみ）
+F20 & BackSpace:: Up
+F20 & Delete:: Down
 F20 & LButton:: PgUp
 F20 & RButton:: PgDn
 
