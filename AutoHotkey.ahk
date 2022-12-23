@@ -116,22 +116,22 @@ Return
 ^+/:: Send, {\}
 
 ; 日付、時刻 ==============================================
-vk1C & q:: ;変換 + q
+vk1C & F1:: ;変換 + q
   FormatTime, dateStr, , yyyy/MM/dd
   Send, {vkF2}{vkF3}%dateStr%
 Return
 
-vk1C & w:: ;変換 + w
+vk1C & F2:: ;変換 + w
   FormatTime, dateStr, , yyyyMMdd
   Send, {vkF2}{vkF3}%dateStr%
 Return
 
-vk1C & e:: ;変換 + e
+vk1C & F3:: ;変換 + e
   FormatTime, dateStr, , HH:mm
   Send, {vkF2}{vkF3}%dateStr%
 Return
 
-vk1C & r:: ;変換 + e
+vk1C & F4:: ;変換 + e
   FormatTime, dateStr, , HHmm
   Send, {vkF2}{vkF3}%dateStr%
 Return
