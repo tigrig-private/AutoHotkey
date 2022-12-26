@@ -158,3 +158,12 @@ Return
 #IfWinActive, ahk_exe WMOne.exe
   ^Enter:: Send, {Enter}
 #IfWinActive
+
+; Explorer ==============================================
+#IfWinActive, ahk_exe Explorer.EXE
+  ; Code で開く（ディレクトリ）
+F20 & c::
+  Send, {AppsKey}
+  Send, {C}
+Return
+#IfWinActive
