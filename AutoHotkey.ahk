@@ -61,8 +61,8 @@ vk1C & o::
   F20 & o:: Delete
 vk1C & vkBB:: ;セミコロン
   F20 & vkBB:: Enter
-vk1C & z::
-  F20 & z:: Esc
+vk1C & q::
+  F20 & q:: Esc
 vk1C & 1::
   F20 & 1:: F1
 vk1C & 2::
