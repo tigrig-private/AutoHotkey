@@ -39,28 +39,21 @@ Return
 Return
 
 ; 特殊コントロール
-vk1C & i::
-  F20 & i:: Up
-vk1C & j::
-  F20 & j:: Left
-vk1C & k::
-  F20 & k:: Down
-vk1C & l::
-  F20 & l:: Right
-vk1C & m::
-  F20 & m:: Home
-vk1C & .::
-  F20 & .:: End
-vk1C & y::
-  F20 & y:: PgUp
-vk1C & h::
-  F20 & h:: PgDn
-vk1C & u::
-  F20 & u:: BackSpace
-vk1C & o::
-  F20 & o:: Delete
-vk1C & vkBB:: ;セミコロン
-  F20 & vkBB:: Enter
+vk1C & i:: Up
+F20 & w:: Up
+vk1C & j:: Left
+F20 & a:: Left
+vk1C & k:: Down
+F20 & s:: Down
+vk1C & l:: Right
+F20 & d:: Right
+vk1C & m:: Home
+vk1C & .:: End
+vk1C & y:: PgUp
+vk1C & h:: PgDn
+vk1C & u:: BackSpace
+vk1C & o:: Delete
+vk1C & vkBB:: Enter ;セミコロン
 vk1C & q::
   F20 & q:: Esc
 vk1C & 1::
