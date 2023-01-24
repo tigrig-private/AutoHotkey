@@ -99,12 +99,6 @@ Return
 ; Numパッド
 ^NumpadDot:: Send, {:}
 
-; 最小化
-F1 & Space::
-F20 & Space::
-  WinMinimize, A
-Return
-
 ; バックスラッシュ
 ^+/:: Send, {\}
 
