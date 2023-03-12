@@ -24,154 +24,35 @@ ProcessSetPriority("Realtime")
 ; 3 = A window's title must exactly match WinTitle to be a match.
 SetTitleMatchMode(2)
 
-; 処理 ===========================================================================
+; 補足コメント ===========================================================================
 
 ; [Ctrlキー]	^
 ; [Shiftキー]	+
 ; [Altキー]	!
 ; [Winキー]	#
 
-NumLock:: Return
-Insert:: Return
-vk1C:: Return ;変換キー
-F1:: Return
-F20:: Return
-RAlt:: Return
-
 ;※半角/全角 -> ChgKey で変えている
-;※CapsLock -> ChgKey で変えている
+;※CapsLock -> ChgKey で RWin に変えている
 
-#+E:: Run("C:\Users\" A_UserName "\Downloads")
-#c:: Run("cmd")
+; セットアップ ===========================================================================
+#Include Libs/Setup/Ignore.ahk
 
-; 特殊コントロール
-vk1C & i:: Up
-F20 & w:: Up
-vk1C & j:: Left
-F20 & a:: Left
-vk1C & k:: Down
-F20 & s:: Down
-vk1C & l:: Right
-F20 & d:: Right
-vk1C & m:: Home
-vk1C & .:: End
-vk1C & y:: PgUp
-vk1C & h:: PgDn
-vk1C & u:: BackSpace
-vk1C & o:: Delete
-vk1C & vkBB:: Enter ;セミコロン
+; リマップ ===========================================================================
+#Include Libs/Remaps/Developer.ahk
+#Include Libs/Remaps/ExControl.ahk
+#Include Libs/Remaps/ExNumpad.ahk
 
-vk1C & q::
-F20 & q::
-{
-  Send("{Esc}")
-}
+; ホットストリング ===========================================================================
 
-vk1C & 1::
-F20 & 1::
-{
-  Send("{F1}")
-}
+; ホットキー ===========================================================================
+#Include Libs/Hotkeys/Ahk.ahk
+#Include Libs/Hotkeys/DateTime.ahk
+#Include Libs/Hotkeys/ExecuteApps.ahk
+#Include Libs/Hotkeys/Sound.ahk
 
-vk1C & 2::
-F20 & 2::
-{
-  Send("{F2}")
-}
-
-vk1C & 3::
-F20 & 3::
-{
-  Send("{F3}")
-}
-
-vk1C & 4::
-F20 & 4::
-{
-  Send("{F4}")
-}
-
-vk1C & 5::
-F20 & 5::
-{
-  Send("{F5}")
-}
-
-; 特殊コントロール（マウスのみ）
-F20 & BackSpace:: Up
-F20 & Delete:: Down
-F20 & LButton:: PgUp
-F20 & RButton:: PgDn
-
-; F20（その他）
-vk1C & b::
-F20 & b:: Send("^{/}")
-vk1C & Esc::
-F20 & Esc:: Reload()
-
-; 音量
-F20 & Up:: Send("{Volume_Up 1}")
-F20 & Down:: Send("{Volume_Down 1}")
-F20 & Left:: Send("{Media_Play_Pause}")
-F20 & Right:: Send("{Volume_Mute}")
-
-; Numパッド
-^NumpadDot:: Send("{:}")
-
-; バックスラッシュ
-^+/:: Send("{\}")
-
-; 日付、時刻 ==============================================
-vk1C & F1:: ;変換 + q
-{
-  dateStr := FormatTime(, "yyyy/MM/dd")
-  Send("{vkF2}{vkF3}" dateStr)
-}
-
-vk1C & F2:: ;変換 + w
-{
-  dateStr := FormatTime(, "yyyyMMdd")
-  Send("{vkF2}{vkF3}" dateStr)
-}
-
-vk1C & F3:: ;変換 + e
-{
-  dateStr := FormatTime(, "HH:mm")
-  Send("{vkF2}{vkF3}" dateStr)
-}
-
-vk1C & F4:: ;変換 + e
-{
-  dateStr := FormatTime(, "HHmm")
-  Send("{vkF2}{vkF3}" dateStr)
-}
-
-; Notion ==============================================
-#HotIf WinActive("ahk_exe Notion.exe", )
-; 戻る
-XButton1:: Send("^{vkDB}")
-; 進む
-XButton2:: Send("^{vkDD}")
-
-; Object Browser ==============================================
-#HotIf WinActive("ahk_exe obo.exe", )
-^Enter:: Send("{Alt Down}{O}{E}{Alt Up}")
-
-; A5M2 ==============================================
-#HotIf WinActive("ahk_exe A5M2.exe", )
-~F20 & b:: Send("^{k}")
-
-; LineWorks ==============================================
-#HotIf WinActive("ahk_exe WMOne.exe", )
-^Enter:: Send("{Enter}")
-
-; Explorer ==============================================
-#HotIf WinActive("ahk_exe Explorer.EXE", )
-
-; Code で開く（ディレクトリ）
-F20 & c::
-{
-  Send("{AppsKey}")
-  Send("{C}")
-  Return
-}
+; アプリケーションごとの設定 ===========================================================================
+#Include Libs/IfWinActive/A5M2.ahk
+#Include Libs/IfWinActive/Explorer.ahk
+#Include Libs/IfWinActive/LineWorks.ahk
+#Include Libs/IfWinActive/Notion.ahk
+#Include Libs/IfWinActive/ObjectBrowser.ahk
