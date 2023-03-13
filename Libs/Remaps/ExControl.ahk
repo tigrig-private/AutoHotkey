@@ -1,5 +1,8 @@
 ; 特殊コントロール
 
+; - vk1C は変換キー
+; - F20 はマウス親指ボタン
+
 ; キーボードホームポジションでの操作
 vk1C & i:: Up
 vk1C & j:: Left
@@ -19,8 +22,15 @@ vk1C & 3:: F3
 vk1C & 4:: F4
 vk1C & 5:: F5
 
+; キーボードでマウス操作
+F13 & i:: MouseMove 0, -10, 0, "R"
+F13 & j:: MouseMove -10, 0, 0, "R"
+F13 & k:: MouseMove 0, 10, 0, "R"
+F13 & l:: MouseMove 10, 0, 0, "R"
+F13 & u:: Click "Left"
+F13 & o:: Click "Right"
+
 ; 片手マウス状態での操作
-; ( F20 は親指ボタン )
 F20 & w:: Up
 F20 & a:: Left
 F20 & s:: Down
