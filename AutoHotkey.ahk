@@ -43,6 +43,7 @@ SetTitleMatchMode(2)
 #Include Libs/Remaps/ExNumpad.ahk
 
 ; ホットストリング ===========================================================================
+#Include Libs/Hotstrings/Mail.ahk
 
 ; ホットキー ===========================================================================
 #Include Libs/Hotkeys/Ahk.ahk
