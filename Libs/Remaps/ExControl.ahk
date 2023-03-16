@@ -40,8 +40,3 @@ F20 & BackSpace:: Up
 F20 & Delete:: Down
 F20 & LButton:: PgUp
 F20 & RButton:: PgDn
-
-; 以後その他
-
-; バックスラッシュ
-^+/:: Send("{\}")
