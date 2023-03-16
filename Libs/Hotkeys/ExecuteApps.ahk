@@ -1,7 +1,10 @@
 ; アプリケーション起動
 
-; ダウンロードフォルダ開く
+; ダウンロードフォルダ
 #+E:: Run("C:\Users\" A_UserName "\Downloads")
 
-; cmd 開く
+; cmd
 #c:: Run("cmd")
+
+; cmd
+#+c:: Run("ubuntu")
