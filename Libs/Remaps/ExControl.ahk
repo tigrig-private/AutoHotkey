@@ -29,6 +29,8 @@ F13 & k:: MouseMove 0, 10, 0, "R"
 F13 & l:: MouseMove 10, 0, 0, "R"
 F13 & u:: Click "Left"
 F13 & o:: Click "Right"
+F13 & y:: WheelUp
+F13 & h:: WheelDown
 
 ; 片手マウス状態での操作
 F20 & w:: Up
