@@ -36,6 +36,7 @@ SetTitleMatchMode(2)
 
 ; セットアップ ===========================================================================
 #Include Libs/Setup/Ignore.ahk
+#Include Libs/Setup/ModifierKeys.ahk
 
 ; リマップ ===========================================================================
 #Include Libs/Remaps/Developer.ahk
