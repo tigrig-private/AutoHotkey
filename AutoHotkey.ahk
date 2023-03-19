@@ -42,6 +42,7 @@ SetTitleMatchMode(2)
 #Include Libs/Remaps/Developer.ahk
 #Include Libs/Remaps/ExControl.ahk
 #Include Libs/Remaps/ExNumpad.ahk
+#Include Libs/Remaps/TaskSwitch.ahk
 
 ; ホットストリング ===========================================================================
 #Include Libs/Hotstrings/Mail.ahk
