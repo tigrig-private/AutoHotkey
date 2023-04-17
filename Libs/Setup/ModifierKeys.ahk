@@ -12,6 +12,10 @@ F13:: Return
 ; ( Chgkey で割当 )
 F14:: Return
 
+; 右Alt
+; ( Chgkey で割当 )
+F15:: Return
+
 ; マウスの親指ボタン
 ; ( Logicool GHub で割当 )
 F20:: Return
