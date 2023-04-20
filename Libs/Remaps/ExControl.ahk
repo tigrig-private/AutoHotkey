@@ -33,7 +33,9 @@ F20 & 5:: F5
 
 ; マウスのみでの操作
 ; ( BackSpace と Delete は人差し指ボタン )
-F20 & BackSpace:: Up
-F20 & Delete:: Down
-F20 & LButton:: PgUp
-F20 & RButton:: PgDn
+F20 & BackSpace:: PgUp
+F20 & Delete:: PgDn
+F20 & WheelUp:: Up
+F20 & WheelDown:: Down
+F20 & LButton:: Left
+F20 & RButton:: Right
