@@ -5,15 +5,15 @@
 vk1C:: Return ;変換キー
 
 ; CapsLock
-; ( Chgkey で割当 )
+; ( Chgkey で割当 `0064` )
 F13:: Return
 
 ; 半角/全角
-; ( Chgkey で割当 )
+; ( Chgkey で割当 `0065` )
 F14:: Return
 
 ; 右Alt
-; ( Chgkey で割当 )
+; ( Chgkey で割当 `0066` )
 F15:: Return
 
 ; マウスの親指ボタン
