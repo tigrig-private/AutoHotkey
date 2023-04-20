@@ -43,6 +43,7 @@ SetTitleMatchMode(2)
 #Include Libs/Remaps/ExFunctionKey.ahk
 #Include Libs/Remaps/ExControl.ahk
 #Include Libs/Remaps/ExNumpad.ahk
+#Include Libs/Remaps/ExRightHand.ahk
 #Include Libs/Remaps/TaskSwitch.ahk
 
 ; ホットストリング ===========================================================================
