@@ -1,4 +1,4 @@
-; 各種設定 ===========================================================================
+﻿; 各種設定 ===========================================================================
 
 ; 常駐に指定
 Persistent()
@@ -40,6 +40,7 @@ SetTitleMatchMode(2)
 
 ; リマップ ===========================================================================
 #Include Libs/Remaps/Developer.ahk
+#Include Libs/Remaps/ExFunctionKey.ahk
 #Include Libs/Remaps/ExControl.ahk
 #Include Libs/Remaps/ExNumpad.ahk
 #Include Libs/Remaps/TaskSwitch.ahk
