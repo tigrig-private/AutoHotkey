@@ -57,6 +57,7 @@ SetTitleMatchMode(2)
 
 ; アプリケーションごとの設定 ===========================================================================
 #Include Libs/IfWinActive/A5M2.ahk
+#Include Libs/IfWinActive/Excel.ahk
 #Include Libs/IfWinActive/Explorer.ahk
 #Include Libs/IfWinActive/LineWorks.ahk
 #Include Libs/IfWinActive/Notion.ahk
