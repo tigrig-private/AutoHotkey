@@ -43,7 +43,6 @@ SetTitleMatchMode(2)
 #Include Libs/Remaps/ExFunctionKey.ahk
 #Include Libs/Remaps/ExControl.ahk
 #Include Libs/Remaps/ExNumpad.ahk
-#Include Libs/Remaps/ExRightHand.ahk
 #Include Libs/Remaps/TaskSwitch.ahk
 
 ; ホットストリング ===========================================================================
@@ -56,9 +55,6 @@ SetTitleMatchMode(2)
 #Include Libs/Hotkeys/Sound.ahk
 
 ; アプリケーションごとの設定 ===========================================================================
-#Include Libs/IfWinActive/A5M2.ahk
 #Include Libs/IfWinActive/Excel.ahk
 #Include Libs/IfWinActive/Explorer.ahk
-#Include Libs/IfWinActive/LineWorks.ahk
 #Include Libs/IfWinActive/Notion.ahk
-#Include Libs/IfWinActive/ObjectBrowser.ahk
