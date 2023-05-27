@@ -1,19 +1,26 @@
 ; 特殊キーバインディング
-; - Arrow
-; - Enter, Del, BackSpace
-; - Home, End, PgDn, PgUp
-; - ESC
 
-; vk1C ( 変換キー ) を使った操作
-vk1C & i:: Up
-vk1C & j:: Left
-vk1C & k:: Down
-vk1C & l:: Right
-vk1C & m:: Home
-vk1C & .:: End
-vk1C & y:: PgUp
-vk1C & h:: PgDn
-vk1C & u:: BackSpace
-vk1C & o:: Delete
-vk1C & vkBB:: Enter ;セミコロン
-vk1C & q:: Esc
+; AppsKey で特殊キーバインドモード ON
+ExKeybindMode := false
+AppsKey:: {
+  global ExKeybindMode := !ExKeybindMode
+}
+
+; 特殊キーバインド
+; ※Ctrl, Alt を押している場合は無効化
+#HotIf ExKeybindMode && !GetKeyState("Ctrl", "P") && !GetKeyState("Alt", "P")
+
+i:: Up
+j:: Left
+k:: Down
+l:: Right
+m:: Home
+.:: End
+y:: PgUp
+h:: PgDn
+u:: BackSpace
+o:: Delete
+vkBB:: Enter ;セミコロン
+q:: Esc
+
+#HotIf
