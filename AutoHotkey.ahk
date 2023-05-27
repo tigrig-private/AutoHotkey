@@ -41,7 +41,7 @@ SetTitleMatchMode(2)
 ; リマップ ===========================================================================
 #Include Libs/Remaps/Developer.ahk
 #Include Libs/Remaps/ExFunctionKey.ahk
-#Include Libs/Remaps/ExControl.ahk
+#Include Libs/Remaps/ExKeybind.ahk
 #Include Libs/Remaps/ExNumpad.ahk
 #Include Libs/Remaps/TaskSwitch.ahk
 

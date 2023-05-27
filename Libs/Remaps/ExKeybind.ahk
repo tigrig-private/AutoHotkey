@@ -1,4 +1,4 @@
-; コントロール系のキー
+; 特殊キーバインディング
 ; - Arrow
 ; - Enter, Del, BackSpace
 ; - Home, End, PgDn, PgUp
