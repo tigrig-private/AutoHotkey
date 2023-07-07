@@ -44,7 +44,6 @@ SetTitleMatchMode(2)
 #Include Libs/Remaps/ExKeybind.ahk
 #Include Libs/Remaps/ExKeybindMouse.ahk
 #Include Libs/Remaps/ExNumpad.ahk
-#Include Libs/Remaps/TaskSwitch.ahk
 
 ; ホットストリング ===========================================================================
 #Include Libs/Hotstrings/Mail.ahk
