@@ -16,4 +16,4 @@ vk1C & h:: PgDn
 vk1C & u:: BackSpace
 vk1C & o:: Delete
 vk1C & vkBB:: Enter ;セミコロン
-vk1C & q:: Esc
+vk1C & z:: Esc
