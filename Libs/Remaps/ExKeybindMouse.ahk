@@ -5,7 +5,7 @@ F20 & w:: Up
 F20 & a:: Left
 F20 & s:: Down
 F20 & d:: Right
-F20 & q:: Esc
+F20 & z:: Esc
 
 ; マウスのみでの操作
 ; ( BackSpace と Delete は人差し指ボタン )
