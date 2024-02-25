@@ -58,3 +58,6 @@ SetTitleMatchMode(2)
 #Include Libs/IfWinActive/Excel.ahk
 #Include Libs/IfWinActive/Explorer.ahk
 #Include Libs/IfWinActive/Notion.ahk
+
+; Automation ===========================================================================
+#Include Libs/Automation/AutifyCleanupStep.ahk
