@@ -1,11 +1,11 @@
 ; ファンクションキー
 
-; vk1C ( 変換キー ) を使った操作
-vk1C & 1:: F1
-vk1C & 2:: F2
-vk1C & 3:: F3
-vk1C & 4:: F4
-vk1C & 5:: F5
+; AppsKey を使った操作
+AppsKey & 1:: F1
+AppsKey & 2:: F2
+AppsKey & 3:: F3
+AppsKey & 4:: F4
+AppsKey & 5:: F5
 
 ; F20 ( マウス親指ボタン ) を使った操作
 F20 & 1:: F1

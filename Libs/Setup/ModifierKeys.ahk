@@ -19,3 +19,6 @@ F15:: Return
 ; マウスの親指ボタン
 ; ( Logicool GHub で割当 )
 F20:: Return
+
+; AppsKey
+AppsKey:: Return
