@@ -3,11 +3,11 @@
 ; カーソル操作中にCtrlキーを一瞬押すといい感じにブーストできる
 ; CtrlとShiftでの加速減速はWindowsのマウスキー機能を踏襲
 ; 精密操作がしたい時は 変換+Shift+WASD でカーソルをゆっくり動かせる
-vk1C & W::
-vk1C & A::
-vk1C & S::
-vk1C & D:: {
-  While (GetKeyState("vk1C", "P"))                 ; 変換キーが押され続けている間マウス移動の処理をループさせる
+AppsKey & W::
+AppsKey & A::
+AppsKey & S::
+AppsKey & D:: {
+  While (GetKeyState("AppsKey", "P"))                 ; 変換キーが押され続けている間マウス移動の処理をループさせる
   {
     MoveX := 0, MoveY := 0
     MoveY += GetKeyState("W", "P") ? -10 : 0     ; 変換キーと一緒にIJKLが押されている間はカーソル座標を変化させ続ける
