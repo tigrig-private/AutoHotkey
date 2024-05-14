@@ -54,6 +54,8 @@ SetTitleMatchMode(2)
 #Include Libs/Hotkeys/DateTime.ahk
 #Include Libs/Hotkeys/ExecuteApps.ahk
 #Include Libs/Hotkeys/Sound.ahk
+#Include Libs/Hotkeys/IME.ahk
+#Include Libs/Hotkeys/ConvertToJa.ahk
 
 ; アプリケーションごとの設定 ===========================================================================
 #Include Libs/IfWinActive/Excel.ahk
