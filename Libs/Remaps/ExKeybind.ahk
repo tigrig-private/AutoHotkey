@@ -18,5 +18,5 @@ u::BackSpace
 o::Delete
 vkBB::Enter ;セミコロン
 z::Esc
-Space:: ConvertToJa()
+; Space:: ConvertToJa()
 #HotIf
