@@ -6,34 +6,10 @@
 
 ; vk1C ( 変換キー ) を使った操作
 #HotIf GetKeyState("vk1C", "P")
-i:: {
-  If (GetKeyState("F13", "P")) {
-    Send("{Up}{Up}")
-    Return
-  }
-  Send("{Up}")
-}
-j:: {
-  If (GetKeyState("F13", "P")) {
-    Send("{Left}{Left}")
-    Return
-  }
-  Send("{Left}")
-}
-k:: {
-  If (GetKeyState("F13", "P")) {
-    Send("{Down}{Down}")
-    Return
-  }
-  Send("{Down}")
-}
-l:: {
-  If (GetKeyState("F13", "P")) {
-    Send("{Right}{Right}")
-    Return
-  }
-  Send("{Right}")
-}
+i::Up
+j::Left
+k::Down
+l::Right
 m::Home
 .::End
 y::PgUp
