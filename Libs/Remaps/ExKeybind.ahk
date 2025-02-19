@@ -23,7 +23,10 @@ z::Esc
 
 ; F13 ( CapsLock ) を使った操作: タイプミス多いキーの調整
 #HotIf GetKeyState("F13", "P")
--::^
-p::@
+p::[
+vkBB::]
 /::\
+h::@
+,::-
+.::^
 #HotIf
