@@ -25,8 +25,9 @@ z::Esc
 #HotIf GetKeyState("F13", "P")
 p::[
 vkBB::]
-/::\
-h::@
 ,::-
 .::^
+h::@
+/::vkE2 ;アンダーバーのキー
+:::|
 #HotIf
