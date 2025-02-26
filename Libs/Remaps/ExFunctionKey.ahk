@@ -1,15 +1,19 @@
 ; ファンクションキー
 
-; AppsKey を使った操作
-AppsKey & 1:: F1
-AppsKey & 2:: F2
-AppsKey & 3:: F3
-AppsKey & 4:: F4
-AppsKey & 5:: F5
+; vk1D (無変換キー) を使った操作
+vk1D & 1::F1
+vk1D & 2::F2
+vk1D & 3::F3
+vk1D & 4::F4
+vk1D & 5::F5
+vk1D & 6::F6
+vk1D & 7::F7
+vk1D & 8::F8
+vk1D & 9::F9
 
 ; F20 ( マウス親指ボタン ) を使った操作
-F20 & 1:: F1
-F20 & 2:: F2
-F20 & 3:: F3
-F20 & 4:: F4
-F20 & 5:: F5
+F20 & 1::F1
+F20 & 2::F2
+F20 & 3::F3
+F20 & 4::F4
+F20 & 5::F5
