@@ -16,12 +16,13 @@ y::PgUp
 h::PgDn
 u::BackSpace
 o::Delete
+vkBB::Enter ;セミコロン
 z::Esc
 ; Space:: ConvertToJa()
 #HotIf
 
-; vk1D ( 無変換キー ) を使った操作: タイプミス多いキーの調整
-#HotIf GetKeyState("vk1D", "P")
+; F13 ( CapsLock ) を使った操作: タイプミス多いキーの調整
+#HotIf GetKeyState("F13", "P")
 p::[
 vkBB::]
 ,::-
