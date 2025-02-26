@@ -4,9 +4,12 @@
 ; 変換キー
 vk1C:: Return ;変換キー
 
+; 無変換キー
+vk1D:: Return
+
 ; CapsLock
 ; ( Chgkey で割当 `0064` )
-F13:: Return
+F13::Enter
 
 ; 半角/全角
 ; ( Chgkey で割当 `0065` )
@@ -21,4 +24,4 @@ F15:: Return
 F20:: Return
 
 ; AppsKey
-AppsKey:: Return
+AppsKey:: IME_SET(0)
