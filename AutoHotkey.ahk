@@ -45,6 +45,7 @@ SetTitleMatchMode(2)
 
 ; ホットストリング ===========================================================================
 #Include Libs/Hotstrings/Mail.ahk
+#Include Libs/Hotstrings/PR.ahk
 
 ; ホットキー ===========================================================================
 #Include Libs/Hotkeys/Ahk.ahk
