@@ -17,7 +17,7 @@ h::PgDn
 u::BackSpace
 o::Delete
 vkBB::Enter ;セミコロン
-z::Esc
+q::Esc
 ; Space:: ConvertToJa()
 #HotIf
 
