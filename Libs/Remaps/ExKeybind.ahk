@@ -25,5 +25,8 @@ q::Esc
 #HotIf GetKeyState("F13", "P")
 h::@
 /::vkE2 ;アンダーバーのキー
-:::|
+y::|
 #HotIf
+
+; - 苦手対応
+0::-
