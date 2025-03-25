@@ -6,10 +6,10 @@ AppsKey & L:: {
   While (GetKeyState("AppsKey", "P"))
   {
     MoveX := 0, MoveY := 0
-    MoveY += GetKeyState("W", "P") ? -8 : 0
-    MoveX += GetKeyState("A", "P") ? -8 : 0
-    MoveY += GetKeyState("S", "P") ? 8 : 0
-    MoveX += GetKeyState("D", "P") ? 8 : 0
+    MoveY += GetKeyState("I", "P") ? -8 : 0
+    MoveX += GetKeyState("J", "P") ? -8 : 0
+    MoveY += GetKeyState("K", "P") ? 8 : 0
+    MoveX += GetKeyState("L", "P") ? 8 : 0
     ; Ctrlキーが押されている間スピードアップ
     MoveX *= GetKeyState("Ctrl", "P") ? 10 : 1
     MoveY *= GetKeyState("Ctrl", "P") ? 10 : 1
