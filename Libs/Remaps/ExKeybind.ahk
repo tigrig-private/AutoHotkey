@@ -16,7 +16,6 @@ y::PgUp
 h::PgDn
 u::BackSpace
 o::Delete
-vkBB::Enter ;セミコロン
 q::Esc
 ; Space:: ConvertToJa()
 #HotIf
@@ -30,3 +29,6 @@ y::|
 
 ; - 苦手対応
 0::-
+
+; Enterがコンビネーションキーだと時々反応しないので対応
+AppsKey::Enter
