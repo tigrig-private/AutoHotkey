@@ -1,15 +1,14 @@
-AppsKey & I::
-AppsKey & J::
-AppsKey & K::
-AppsKey & L:: {
-  ; 変換キーが押され続けている間マウス移動の処理をループさせる
-  While (GetKeyState("AppsKey", "P"))
+F15 & I::
+F15 & J::
+F15 & K::
+F15 & L:: {
+  While (GetKeyState("F15", "P"))
   {
     MoveX := 0, MoveY := 0
-    MoveY += GetKeyState("W", "P") ? -8 : 0
-    MoveX += GetKeyState("A", "P") ? -8 : 0
-    MoveY += GetKeyState("S", "P") ? 8 : 0
-    MoveX += GetKeyState("D", "P") ? 8 : 0
+    MoveY += GetKeyState("I", "P") ? -8 : 0
+    MoveX += GetKeyState("J", "P") ? -8 : 0
+    MoveY += GetKeyState("K", "P") ? 8 : 0
+    MoveX += GetKeyState("L", "P") ? 8 : 0
     ; Ctrlキーが押されている間スピードアップ
     MoveX *= GetKeyState("Ctrl", "P") ? 10 : 1
     MoveY *= GetKeyState("Ctrl", "P") ? 10 : 1
@@ -22,4 +21,4 @@ AppsKey & L:: {
   Return
 }
 
-AppsKey & F:: Click
+F15 & F:: Click

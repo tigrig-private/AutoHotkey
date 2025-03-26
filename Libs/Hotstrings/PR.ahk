@@ -1,4 +1,4 @@
-#HotIf GetKeyState("AppsKey", "P")
+#HotIf GetKeyState("F15", "P")
 F1::
 {
   A_Clipboard := "![imo-badge](https://img.shields.io/badge/review-imo-orange.svg)"
