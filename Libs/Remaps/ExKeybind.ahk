@@ -20,17 +20,14 @@ q::Esc
 ; Space:: ConvertToJa()
 #HotIf
 
-; F13 ( CapsLock ) を使った操作: タイプミス多いキーの調整
-#HotIf GetKeyState("F13", "P")
-h::@
-/::vkE2 ;アンダーバーのキー
-y::|
+; タイプミス多いキーの調整
+#HotIf GetKeyState("vk1C", "P")
+a::@
+/::\
+z::|
 p::[
 vkBB::] ; セミコロン
 #HotIf
-
-; - 苦手対応
-0::-
 
 ; Enterがコンビネーションキーだと時々反応しないので対応
 AppsKey::Enter
