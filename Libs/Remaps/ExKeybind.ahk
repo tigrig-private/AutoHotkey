@@ -22,10 +22,9 @@ q::Esc
 
 ; タイプミス多いキーの調整
 #HotIf GetKeyState("vk1C", "P")
-q::@
-x::`
+,::@
 /::\
-z::|
+x::|
 p::[
 vkBB::] ; セミコロン
 #HotIf
