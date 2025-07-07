@@ -22,8 +22,8 @@ q::Esc
 
 ; タイプミス多いキーの調整
 #HotIf GetKeyState("vk1C", "P")
-a::@
-s::`
+q::@
+x::`
 /::\
 z::|
 p::[
