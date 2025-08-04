@@ -60,5 +60,8 @@ SetTitleMatchMode(2)
 #Include Libs/IfWinActive/Explorer.ahk
 #Include Libs/IfWinActive/Notion.ahk
 
+; 特殊ショートカットの設定 ===========================================================================
+#Include Libs/Shortcuts/Shortcut.ahk
+
 ; Automation ===========================================================================
 #Include Libs/Automation/AutifyCleanupStep.ahk
