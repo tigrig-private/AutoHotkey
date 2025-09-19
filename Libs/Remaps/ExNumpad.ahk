@@ -9,3 +9,5 @@ u::4
 i::5
 o::6
 #HotIf
+
+^NumpadDot:::
