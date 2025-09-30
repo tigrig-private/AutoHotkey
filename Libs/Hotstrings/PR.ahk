@@ -42,7 +42,7 @@ F5::
 r::
 {
   ClipSaved := ClipboardAll()
-  A_Clipboard := "gh pr create --base flow-module/phase1/main --assignee '@me' --reviewer 'ryota-kashima_t7s,ryosuke-shinozaki_t7s,yuka-irisawa_t7s' --title 'flow-module | xxx' --body '## 案件(PBI) / 開発の経緯`r`n`r`n`r`n`r`n## 実装内容`r`n`r`n`r`n`r`n## 補足`r`n`r`n`r`n'"
+  A_Clipboard := "gh pr create --base recruitment-media-coordination/remove-http-logs/main --assignee '@me' --reviewer 'yuta-kadokura_t7s' --title 'HTTPログ削除機能追加 | xxx' --body '## PBI`r`n`r`n`r`n`r`n## 対象SBI`r`n`r`n`r`n`r`n## 補足`r`n`r`n`r`n'"
   Send("^v")
   Sleep(50)
   A_Clipboard := ClipSaved
