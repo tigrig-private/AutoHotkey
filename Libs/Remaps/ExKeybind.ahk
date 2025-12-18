@@ -6,14 +6,14 @@
 
 ; vk1C ( 変換キー ) を使った操作
 #HotIf GetKeyState("vk1C", "P")
-i::Up
-j::Left
-k::Down
+h::Left
+j::Down
+k::Up
 l::Right
 m::Home
 .::End
 y::PgUp
-h::PgDn
+i::PgDn
 u::BackSpace
 o::Delete
 q::Esc
