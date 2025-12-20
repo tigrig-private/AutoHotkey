@@ -16,7 +16,6 @@ y::PgUp
 i::PgDn
 u::BackSpace
 o::Delete
-q::Esc
 ; Space:: ConvertToJa()
 #HotIf
 
@@ -32,3 +31,6 @@ vkBA::^ ; コロン
 
 ; Enterがコンビネーションキーだと時々反応しないので対応
 AppsKey::Enter
+
+; Vim使っててESC押すこと増えたので
+RCtrl::Esc
