@@ -24,7 +24,7 @@ q::Esc
 #HotIf GetKeyState("vk1C", "P")
 ,::@
 /::\
-x::|
+8::|
 p::[
 vkBB::] ; セミコロン
 vkBA::^ ; コロン
