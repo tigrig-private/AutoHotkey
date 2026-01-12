@@ -16,7 +16,7 @@ y::PgUp
 i::PgDn
 u::BackSpace
 o::Delete
-q::Esc
+4::Esc
 ; Space:: ConvertToJa()
 #HotIf
 
