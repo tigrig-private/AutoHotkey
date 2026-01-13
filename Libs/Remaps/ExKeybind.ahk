@@ -16,6 +16,7 @@ y::PgUp
 i::PgDn
 u::BackSpace
 o::Delete
+4::Esc
 ; Space:: ConvertToJa()
 #HotIf
 
@@ -23,7 +24,7 @@ o::Delete
 #HotIf GetKeyState("vk1C", "P")
 ,::@
 /::\
-x::|
+8::|
 p::[
 vkBB::] ; セミコロン
 vkBA::^ ; コロン
@@ -31,6 +32,3 @@ vkBA::^ ; コロン
 
 ; Enterがコンビネーションキーだと時々反応しないので対応
 AppsKey::Enter
-
-; Vim使っててESC押すこと増えたので
-RCtrl::Esc
