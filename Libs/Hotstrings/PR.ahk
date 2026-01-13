@@ -42,7 +42,7 @@ F5::
 r::
 {
   ClipSaved := ClipboardAll()
-  A_Clipboard := "gh pr create --base data-platform-integration/main --assignee '@me' --reviewer 'yuta-kadokura_t7s,tomoharu-miyazawa_t7s' --title '顧客データ基盤連携 | xxx' --body '## PBI`r`n`r`n`r`n`r`n## 対象SBI`r`n`r`n`r`n`r`n## 補足`r`n`r`n`r`n'"
+  A_Clipboard := "gh pr create --base data-platform-integration/main --assignee '@me' --reviewer 'tomoharu-miyazawa_t7s' --title '顧客データ基盤連携 | xxx' --body '## PBI`r`n`r`n`r`n`r`n## 対象SBI`r`n`r`n`r`n`r`n## 補足`r`n`r`n`r`n'"
   Send("^v")
   Sleep(50)
   A_Clipboard := ClipSaved
