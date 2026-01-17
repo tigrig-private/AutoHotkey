@@ -16,7 +16,10 @@ y::PgUp
 i::PgDn
 u::BackSpace
 o::Delete
-4::Esc
+4:: {
+  IME_SET(0)
+  Send("{Esc}")
+}
 ; Space:: ConvertToJa()
 #HotIf
 
