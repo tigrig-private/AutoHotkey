@@ -25,7 +25,8 @@ o::Delete
 
 ; タイプミス多いキーの調整
 #HotIf GetKeyState("vk1C", "P")
-,::@
+,::-
+n::@
 /::\
 8::|
 p::[
