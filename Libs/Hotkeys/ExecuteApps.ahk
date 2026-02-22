@@ -4,7 +4,4 @@
 #+E:: Run("C:\Users\" A_UserName "\Downloads")
 
 ; cmd
-#c:: Run("cmd")
-
-; cmd
-#+c:: Run("ubuntu")
+#t:: Send("#{4}")
