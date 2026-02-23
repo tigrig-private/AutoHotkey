@@ -3,8 +3,15 @@
 ; ダウンロードフォルダ
 #+E:: Run("C:\Users\" A_UserName "\Downloads")
 
-; cmd
-#c:: Run("cmd")
+; ブラウザ
+#d:: Send("#{1}")
+#f:: Send("#{2}")
 
-; cmd
-#+c:: Run("ubuntu")
+; メモ・Todo管理ツール
+#c:: Send("#{3}")
+
+; ターミナル
+#t:: Send("#{4}")
+
+; 統合開発環境
+#+c:: Send("#{5}")
