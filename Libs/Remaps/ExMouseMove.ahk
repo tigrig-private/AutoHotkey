@@ -1,14 +1,14 @@
-F15 & I::
-F15 & J::
-F15 & K::
-F15 & L:: {
+F15 & W::
+F15 & A::
+F15 & S::
+F15 & D:: {
   While (GetKeyState("F15", "P"))
   {
     MoveX := 0, MoveY := 0
-    MoveY += GetKeyState("I", "P") ? -8 : 0
-    MoveX += GetKeyState("J", "P") ? -8 : 0
-    MoveY += GetKeyState("K", "P") ? 8 : 0
-    MoveX += GetKeyState("L", "P") ? 8 : 0
+    MoveY += GetKeyState("W", "P") ? -8 : 0
+    MoveX += GetKeyState("A", "P") ? -8 : 0
+    MoveY += GetKeyState("S", "P") ? 8 : 0
+    MoveX += GetKeyState("D", "P") ? 8 : 0
     ; Ctrlキーが押されている間スピードアップ
     MoveX *= GetKeyState("Ctrl", "P") ? 10 : 1
     MoveY *= GetKeyState("Ctrl", "P") ? 10 : 1
